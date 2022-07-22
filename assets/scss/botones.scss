@@ -1,10 +1,16 @@
 .btn{
     width: 100px;
     border-radius: 10%;
+    box-shadow:0px 10px 14px -7px #1e4356;
     @include propiedadesBotones(white, $colorClinica )
+
 }
 
 .btnFundi{
+    box-shadow:0px 10px 14px -7px #1e4356;
+    border-color: none;
+    border-style: none;
     @extend .btn;
     @include propiedadesBotones(white, $colorFundacion )
+    
 }
