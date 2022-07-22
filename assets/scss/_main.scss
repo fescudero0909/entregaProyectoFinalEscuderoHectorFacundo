@@ -1,0 +1,62 @@
+/*main del index*/
+main{
+    .titulo{
+        font-family:map-get($estilos , familiaFuente );
+    }
+    .parrafo{
+        font-family: map-get($estilos , familiaFuente );
+    }
+    .frase{
+        font-family: map-get($estilos , familiaFuente );
+        font-style: italic;
+    }
+}
+
+/*pagina equipo*/
+
+.listadoProf{
+    .areaProf{
+        width: 200px;
+        background-color: $colorClinica;
+        color: map-get($estilos , colorFuente );
+        font-family: map-get($estilos , familiaFuente );
+        margin: 10px;
+        padding: 20px;
+        border-radius: 0%;
+        box-shadow:0px 10px 14px -7px #1e4356;
+        border-color: none ;
+        border-style: none;
+    }
+    .datosProf{
+        display: none;
+        position: absolute;
+    }
+}
+
+.listadoProf:hover .datosProf{
+    display: block;
+    position: relative;
+}
+
+
+
+
+
+/*pagina rehabilitacion*/
+main{
+    font-family: map-get($estilos , familiaFuente );
+    .objeto{
+        background-color: #d5d2d2;
+    }
+}
+
+/*pagina capacitaciones*/
+.bg-colorCursos{
+    background-color: #d5d2d2;
+}
+.fotoCurso{
+    transition: all 1s;
+    &:hover{
+        transform: translate(0px,-15px) scale(1.1) ;
+    }
+}

@@ -1,0 +1,26 @@
+$colorClinica:rgb(0, 102, 51);
+$colorFundacion:rgb(171, 1, 50);
+
+$colorNav: (
+    fundi: $colorFundacion,
+    clinica: $colorClinica
+);
+
+$estilos:(
+    nombreAnimacion: aparecer,
+    duracionAnimacion: 2s,
+    colorFuente: white,
+    familiaFuente: "Ubuntu"
+);
+
+@each $key , $var in $colorNav {
+    .bg-color-#{$key}{
+        background-color: $var;
+    }
+}
+
+@mixin propiedadesBotones ($colorLetra , $colorFondo) {
+    color: $colorLetra;
+    background-color: $colorFondo;
+}
+

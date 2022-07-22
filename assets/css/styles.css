@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.bg-color-fundi {
+  background-color: #ab0132; }
+
+.bg-color-clinica {
+  background-color: #006633; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.btn, .btnFundi {
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+  background-color: #006633; }
+
+.btnFundi {
+  color: white;
+  background-color: #ab0132; }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20; }
+
+.navbar-brand {
+  animation-name: aparecer;
+  animation-duration: 2s; }
+
+.nav-link {
+  color: white;
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative; }
+  .nav-link::after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.512);
+    border-radius: 20%;
+    position: absolute;
+    left: 5%;
+    top: 80%;
+    width: 88%;
+    height: 3px;
+    opacity: 0;
+    transition: 0.6s; }
+  .nav-link:hover::after {
+    opacity: 1; }
+
+.nav-item a.active::after {
+  opacity: 1; }
+
+.nav-item a:hover {
+  color: antiquewhite;
+  opacity: 0.9; }
+
+/*main del index*/
+main .titulo {
+  font-family: "Ubuntu"; }
+
+main .parrafo {
+  font-family: "Ubuntu"; }
+
+main .frase {
+  font-family: "Ubuntu";
+  font-style: italic; }
+
+/*pagina equipo*/
+.listadoProf .areaProf {
+  width: 200px;
+  background-color: #006633;
+  color: white;
+  font-family: "Ubuntu";
+  margin: 10px;
+  padding: 20px;
+  border-radius: 0%;
+  box-shadow: 0px 10px 14px -7px #1e4356;
+  border-color: none;
+  border-style: none; }
+
+.listadoProf .datosProf {
+  display: none;
+  position: absolute; }
+
+.listadoProf:hover .datosProf {
+  display: block;
+  position: relative; }
+
+/*pagina rehabilitacion*/
+main {
+  font-family: "Ubuntu"; }
+  main .objeto {
+    background-color: #d5d2d2; }
+
+/*pagina capacitaciones*/
+.bg-colorCursos {
+  background-color: #d5d2d2; }
+
+.fotoCurso {
+  transition: all 1s; }
+  .fotoCurso:hover {
+    transform: translate(0px, -15px) scale(1.1); }
+
+aside {
+  font-family: "Ubuntu"; }
+  aside .areas {
+    font-style: oblique;
+    list-style: none; }
+
+footer {
+  background-color: #006633; }
+  footer .parrafoPie {
+    color: white;
+    font-size: 14px; }
+
+.footerFCM {
+  background-color: #ab0132; }
+
+.redes a {
+  color: white;
+  font-size: 40px; }
