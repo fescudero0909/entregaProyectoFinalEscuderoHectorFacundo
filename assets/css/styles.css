@@ -115,9 +115,14 @@ main {
 
 aside {
   font-family: "Ubuntu"; }
-  aside .areas {
-    font-style: oblique;
-    list-style: none; }
+
+/*pag rehabilitacion*/
+.card {
+  box-shadow: 0px 10px 14px -7px #1e4356; }
+  .card .card-header {
+    background-color: #006633; }
+    .card .card-header .nav-item {
+      opacity: 0.8; }
 
 footer {
   background-color: #006633; }

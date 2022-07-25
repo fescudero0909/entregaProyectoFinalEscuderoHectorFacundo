@@ -1,7 +1,15 @@
 aside{
     font-family: map-get($estilos , familiaFuente );
-    .areas{
-        font-style: oblique;
-        list-style: none;
+}
+
+/*pag rehabilitacion*/
+
+.card{
+    box-shadow:0px 10px 14px -7px #1e4356;
+    .card-header{
+        background-color:$colorClinica ;
+        .nav-item{
+            opacity: 0.8;
+        }
     }
 }
